@@ -65,7 +65,7 @@ class schedulerCriteria implements Comparator<student>{
     public int compare(student student1, student student2){    
         if(Float.compare(student1.cgpa,student2.cgpa)==0){
             if(student1.name.equals(student2.name)){
-                return Integer.compare(student2.token, student1.token);  
+                return Integer.compare(student1.token, student2.token);  
             }
             else {
                 return student1.name.compareTo(student2.name);                  //lexicographic ordering as in Unicode, case sensitive
